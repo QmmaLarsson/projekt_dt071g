@@ -1,14 +1,19 @@
-﻿namespace quiz
+﻿using Quiz;
+
+namespace quiz
 {
     class Program
     {
         static void Main(string[] args)
         {
+            QuizHandler quizhandler = new QuizHandler();
+            int i = 0;
+
             //While-loop som gör att programmet fortsätter köras till användaren väljer att avsluta programmet
             while (true)
             {
                 Console.Clear(); //Rensa konsollen innan menyn skrivs ut
-                Console.WriteLine("E M M A ' S  Q U I Z\n");
+                Console.WriteLine("E M M A S  Q U I Z\n");
                 Console.WriteLine("[1] Start Quiz");
                 Console.WriteLine("[X] Close application");
 
@@ -24,7 +29,18 @@
                 {
                     case "1":
                         Console.WriteLine("Du har valt alternativ 1");
+
+                        i = 0;
+                        foreach (Question question in quizhandler.getQuestion())
+                        { // List all cars in carstore
+                            Console.WriteLine("[" + i++ + "] " + question.Text);
+                        }
+
                         break;
+
+                    case "2":
+                        Console.WriteLine("Information om spelet");
+                        return;
 
                     case "X":
                         return;
