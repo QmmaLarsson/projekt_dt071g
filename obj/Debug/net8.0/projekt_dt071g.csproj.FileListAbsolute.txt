@@ -12,3 +12,4 @@ C:\Users\Emma\Desktop\Studier\Programmering i C#.NET\projekt_dt071g\obj\Debug\ne
 C:\Users\Emma\Desktop\Studier\Programmering i C#.NET\projekt_dt071g\obj\Debug\net8.0\projekt_dt071g.pdb
 C:\Users\Emma\Desktop\Studier\Programmering i C#.NET\projekt_dt071g\obj\Debug\net8.0\projekt_dt071g.genruntimeconfig.cache
 C:\Users\Emma\Desktop\Studier\Programmering i C#.NET\projekt_dt071g\obj\Debug\net8.0\ref\projekt_dt071g.dll
+C:\Users\Emma\Desktop\Studier\Programmering i C#.NET\projekt_dt071g\obj\Debug\net8.0\projekt_dt071g.sourcelink.json
