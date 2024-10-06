@@ -6,6 +6,7 @@ namespace quiz
     {
         static void Main(string[] args)
         {
+            //Instans av klassen QuizHandler
             QuizHandler quizhandler = new QuizHandler();
             int i = 0;
 
@@ -14,7 +15,8 @@ namespace quiz
             {
                 Console.Clear(); //Rensa konsollen innan menyn skrivs ut
                 Console.WriteLine("E M M A S  Q U I Z\n");
-                Console.WriteLine("[1] Start Quiz");
+                Console.WriteLine("[1] Start game");
+                Console.WriteLine("[2] Information about the game\n");
                 Console.WriteLine("[X] Close application");
 
                 //Läser in användarens val
@@ -28,7 +30,16 @@ namespace quiz
                 switch (choice)
                 {
                     case "1":
-                        Console.WriteLine("Du har valt alternativ 1");
+                        Console.WriteLine("Enter your name: ");
+                        string? playerName = Console.ReadLine().Trim();
+
+                        Console.Clear();
+                        Console.WriteLine("Choose level of difficulty:");
+                        Console.WriteLine("[1] Easy");
+                        Console.WriteLine("[2] Medium");
+                        Console.WriteLine("[3] Hard");
+
+                        string? difficultyChoice = Console.ReadLine();
 
                         i = 0;
                         foreach (Question question in quizhandler.getQuestion())
@@ -39,8 +50,8 @@ namespace quiz
                         break;
 
                     case "2":
-                        Console.WriteLine("Information om spelet");
-                        return;
+                        Console.WriteLine("Information about the game");
+                        break;
 
                     case "X":
                         return;
