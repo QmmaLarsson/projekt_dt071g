@@ -1,5 +1,4 @@
-﻿using System.IO.Pipes;
-using Quiz;
+﻿using Quiz;
 
 namespace quiz
 {
