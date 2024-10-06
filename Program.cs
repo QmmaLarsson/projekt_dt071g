@@ -8,7 +8,6 @@ namespace quiz
         {
             //Instans av klassen QuizHandler
             QuizHandler quizhandler = new QuizHandler();
-            int i = 0;
 
             //While-loop som gör att programmet fortsätter köras till användaren väljer att avsluta programmet
             while (true)
@@ -27,11 +26,12 @@ namespace quiz
                 string choice = input?.Trim().ToUpper() ?? string.Empty;
 
                 //Konsollen rensas innan resultatet visas
-                Console.Clear();
+                //Console.Clear();
                 //Switch-sats som hanterar användarens val
                 switch (choice)
                 {
                     case "1":
+                        Console.Clear();
                         Console.WriteLine("Enter your name: ");
                         //Läser in användarens val
                         string? input2 = Console.ReadLine();
@@ -46,15 +46,41 @@ namespace quiz
 
                         string? difficultyChoice = Console.ReadLine();
 
-                        i = 0;
-                        foreach (Question question in quizhandler.getQuestion())
-                        { // List all cars in carstore
-                            Console.WriteLine("[" + i++ + "] " + question.Text);
+                        string? difficulty;
+                        switch (difficultyChoice)
+                        {
+                            case "1":
+                                difficulty = "Easy";
+                                break;
+                            case "2":
+                                difficulty = "Medium";
+                                break;
+                            case "3":
+                                difficulty = "Hard";
+                                break;
+                            default:
+                                difficulty = "Error: Invalid choice";
+                                break;
+                        }
+
+                        var filteredQuestions = quizhandler.getQuestion().FindAll(q => q.Difficulty == difficulty);
+
+                        Console.Clear();
+
+                        foreach (var question in filteredQuestions)
+                        {
+                            Console.WriteLine(question.Text);
+                            Console.WriteLine();
+                            for (int i = 0; i < question.Answers.Length; i++)
+                            {
+                                Console.WriteLine($"[{ i + 1 }] {question.Answers[i]}");
+                            }
                         }
 
                         break;
 
                     case "2":
+                        Console.Clear();
                         Console.WriteLine("Information about the game");
                         break;
 
@@ -67,6 +93,7 @@ namespace quiz
 
                 }
                 //Vänta med att rensa konsollen
+                Console.WriteLine("");
                 Console.WriteLine("Press a key to continue");
                 Console.ReadKey();
             }

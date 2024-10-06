@@ -2,11 +2,13 @@
     {
         "Text": "Vad är huvudstaden i Sverige?",
         "Answers": ["Göteborg", "Stockholm", "Malmö", "Uppsala"],
-        "CorrectAnswerIndex": 1
+        "CorrectAnswerIndex": 1,
+        "Difficulty": "Easy"
     },
     {
         "Text": "Vilket år började andra världskriget?",
         "Answers": ["1939", "1940", "1941", "1942"],
-        "CorrectAnswerIndex": 0
+        "CorrectAnswerIndex": 0,
+        "Difficulty": "Easy"
     }
 ]
