@@ -1,4 +1,5 @@
-﻿using Quiz;
+﻿using System.IO.Pipes;
+using Quiz;
 
 namespace quiz
 {
@@ -8,6 +9,7 @@ namespace quiz
         {
             //Instans av klassen QuizHandler
             QuizHandler quizhandler = new QuizHandler();
+            HighscoreHandler highscorehandler = new HighscoreHandler();
 
             //While-loop som gör att programmet fortsätter köras till användaren väljer att avsluta programmet
             while (true)
@@ -15,7 +17,8 @@ namespace quiz
                 Console.Clear();
                 Console.WriteLine("E M M A S  Q U I Z\n");
                 Console.WriteLine("[1] Start game");
-                Console.WriteLine("[2] Information about the game\n");
+                Console.WriteLine("[2] Highscore");
+                Console.WriteLine("[3] Information about the game\n");
                 Console.WriteLine("[X] Close application");
 
                 //Läser in användarens val
@@ -130,11 +133,35 @@ namespace quiz
                         Console.Clear();
                         Console.WriteLine("Quiz finished!");
                         Console.WriteLine($"Your total score was {totalScore} points!");
+
+                        highscorehandler.AddPlayerScore(playerName, totalScore);
+
                         Console.WriteLine("Press a key to return to the startpage");
                         Console.ReadKey();
                         break;
 
                     case "2":
+                        Console.Clear();
+                        Console.WriteLine("Highscore");
+                        //Hämta de fem bästa poängen
+                        var topScores = highscorehandler.GetTopScores(5);
+
+                        //If-sats som kontrollerar om det finns några sparade poäng
+                        if (topScores.Count == 0)
+                        {
+                            Console.WriteLine("No scores available yet");
+                        }
+                        else
+                        {
+                            //For-loop som skriver ut de fem bästa poängen
+                            for (int k = 0; k < topScores.Count; k++)
+                            {
+                                Console.WriteLine($"{k + 1}. {topScores[k].PlayerName}: {topScores[k].Score} points");
+                            }
+                        }
+                        break;
+
+                    case "3":
                         Console.Clear();
                         Console.WriteLine("Information about the game");
                         break;
