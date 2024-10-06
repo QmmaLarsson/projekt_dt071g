@@ -20,9 +20,11 @@ namespace quiz
                 Console.WriteLine("[X] Close application");
 
                 //Läser in användarens val
+                string? input = Console.ReadLine();
                 //Trim() tar bort eventuella mellanslag runt användarens inmatning
                 //ToUpper() Säkerställer att både "X" och "x" är giltiga val
-                string choice = Console.ReadLine().Trim().ToUpper();
+                //Om input är null sätts värdet till en tom sträng
+                string choice = input?.Trim().ToUpper() ?? string.Empty;
 
                 //Konsollen rensas innan resultatet visas
                 Console.Clear();
@@ -31,10 +33,13 @@ namespace quiz
                 {
                     case "1":
                         Console.WriteLine("Enter your name: ");
-                        string? playerName = Console.ReadLine().Trim();
+                        //Läser in användarens val
+                        string? input2 = Console.ReadLine();
+                        //Trimma anvndarens input, om input är null sätts värdet till en tom sträng
+                        string playerName = input2?.Trim() ?? string.Empty;
 
                         Console.Clear();
-                        Console.WriteLine("Choose level of difficulty:");
+                        Console.WriteLine("Choose level of difficulty:\n");
                         Console.WriteLine("[1] Easy");
                         Console.WriteLine("[2] Medium");
                         Console.WriteLine("[3] Hard");
