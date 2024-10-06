@@ -12,7 +12,7 @@ namespace quiz
             //While-loop som gör att programmet fortsätter köras till användaren väljer att avsluta programmet
             while (true)
             {
-                Console.Clear(); //Rensa konsollen innan menyn skrivs ut
+                Console.Clear();
                 Console.WriteLine("E M M A S  Q U I Z\n");
                 Console.WriteLine("[1] Start game");
                 Console.WriteLine("[2] Information about the game\n");
@@ -44,9 +44,10 @@ namespace quiz
                         Console.WriteLine("[2] Medium");
                         Console.WriteLine("[3] Hard");
 
+                        //Läser in anändarens val
                         string? difficultyChoice = Console.ReadLine();
-
                         string? difficulty;
+                        //Switch-sats som bestämmer svårighetsgraden utifrån användarens val
                         switch (difficultyChoice)
                         {
                             case "1":
@@ -63,20 +64,43 @@ namespace quiz
                                 break;
                         }
 
+                        //Filtrerar frågor baserat på svårighetsgrad
                         var filteredQuestions = quizhandler.getQuestion().FindAll(q => q.Difficulty == difficulty);
 
                         Console.Clear();
 
+                        //Foreach-loop som loopar igenom de filtrerade frågorna
                         foreach (var question in filteredQuestions)
                         {
                             Console.WriteLine(question.Text);
                             Console.WriteLine();
+                            //For-loop som skriver ut svarsalternativen för frågorna
                             for (int i = 0; i < question.Answers.Length; i++)
                             {
-                                Console.WriteLine($"[{ i + 1 }] {question.Answers[i]}");
+                                Console.WriteLine($"[{i + 1}] {question.Answers[i]}");
+                            }
+
+                            //Läser in användarens svar
+                            string? answerChoice = Console.ReadLine();
+
+                            //If-sats som kontrollerar om svaret är giltigt
+                            if (int.TryParse(answerChoice, out int answerIndex) && answerIndex > 0 && answerIndex <= question.Answers.Length)
+                            {
+                                //If-sats som kontrollerar om svaret är korrekt
+                                if (question.CorrectAnswerIndex == answerIndex - 1)
+                                {
+                                    Console.WriteLine("Correct answer!");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Wrong answer!");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Error: Invalid choice");
                             }
                         }
-
                         break;
 
                     case "2":
