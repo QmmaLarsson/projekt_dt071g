@@ -70,6 +70,9 @@ namespace quiz
                         //Ställ 10 frågor
                         Random random = new Random();
 
+                        //Variabel för att hålla reda på poängen
+                        int totalScore = 0;
+
                         //Foreach-loop som loopar igenom de filtrerade frågorna
                         for (int i = 0; i < 10 && filteredQuestions.Count > 0; i++)
                         {
@@ -95,6 +98,22 @@ namespace quiz
                                 if (question.CorrectAnswerIndex == answerIndex - 1)
                                 {
                                     Console.WriteLine("Correct answer!");
+                                    //Lägg till poäng till totalScore
+                                    switch (difficultyChoice)
+                                    {
+                                        case "1":
+                                            totalScore += 1;
+                                            break;
+                                        case "2":
+                                            totalScore += 2;
+                                            break;
+                                        case "3":
+                                            totalScore += 3;
+                                            break;
+                                        default:
+                                            totalScore += 0;
+                                            break;
+                                    }
                                 }
                                 else
                                 {
@@ -110,6 +129,7 @@ namespace quiz
                         }
                         Console.Clear();
                         Console.WriteLine("Quiz finished!");
+                        Console.WriteLine($"Your total score was {totalScore} points!");
                         Console.WriteLine("Press a key to return to the startpage");
                         Console.ReadKey();
                         break;
