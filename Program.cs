@@ -67,17 +67,22 @@ namespace quiz
                         //Filtrerar frågor baserat på svårighetsgrad
                         var filteredQuestions = quizhandler.getQuestion().FindAll(q => q.Difficulty == difficulty);
 
-                        Console.Clear();
+                        //Ställ 10 frågor
+                        Random random = new Random();
 
                         //Foreach-loop som loopar igenom de filtrerade frågorna
-                        foreach (var question in filteredQuestions)
+                        for (int i = 0; i < 10 && filteredQuestions.Count > 0; i++)
                         {
+                            int randomIndex = random.Next(filteredQuestions.Count);
+                            var question = filteredQuestions[randomIndex];
+
+                            Console.Clear();
                             Console.WriteLine(question.Text);
                             Console.WriteLine();
                             //For-loop som skriver ut svarsalternativen för frågorna
-                            for (int i = 0; i < question.Answers.Length; i++)
+                            for (int j = 0; j < question.Answers.Length; j++)
                             {
-                                Console.WriteLine($"[{i + 1}] {question.Answers[i]}");
+                                Console.WriteLine($"[{j + 1}] {question.Answers[j]}");
                             }
 
                             //Läser in användarens svar
@@ -100,7 +105,13 @@ namespace quiz
                             {
                                 Console.WriteLine("Error: Invalid choice");
                             }
+                            Console.WriteLine("Press a key to continue to the next question");
+                            Console.ReadKey();
                         }
+                        Console.Clear();
+                        Console.WriteLine("Quiz finished!");
+                        Console.WriteLine("Press a key to return to the startpage");
+                        Console.ReadKey();
                         break;
 
                     case "2":
