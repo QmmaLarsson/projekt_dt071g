@@ -121,51 +121,63 @@ namespace quiz
                             int randomIndex = random.Next(filteredQuestions.Count);
                             var question = filteredQuestions[randomIndex];
 
-                            Console.Clear();
-                            Console.WriteLine(question.Text);
-                            Console.WriteLine();
-                            //For-loop som skriver ut svarsalternativen för frågorna
-                            for (int j = 0; j < question.Answers.Length; j++)
-                            {
-                                Console.WriteLine($"[{j + 1}] {question.Answers[j]}");
-                            }
+                            string? answerChoice;
+                            int answerIndex;
 
-                            //Läser in användarens svar
-                            string? answerChoice = Console.ReadLine();
-
-                            //If-sats som kontrollerar om svaret är giltigt
-                            if (int.TryParse(answerChoice, out int answerIndex) && answerIndex > 0 && answerIndex <= question.Answers.Length)
+                            //While-loop som körs till det att användaren anger ett giltigt svar
+                            while (true)
                             {
-                                //If-sats som kontrollerar om svaret är korrekt
-                                if (question.CorrectAnswerIndex == answerIndex - 1)
+                                Console.Clear();
+                                Console.WriteLine(question.Text);
+                                Console.WriteLine();
+                                //For-loop som skriver ut svarsalternativen för frågorna
+                                for (int j = 0; j < question.Answers.Length; j++)
                                 {
-                                    Console.WriteLine("Correct answer!");
-                                    //Lägg till poäng till totalScore
-                                    switch (difficultyChoice)
-                                    {
-                                        case "1":
-                                            totalScore += 1;
-                                            break;
-                                        case "2":
-                                            totalScore += 2;
-                                            break;
-                                        case "3":
-                                            totalScore += 3;
-                                            break;
-                                        default:
-                                            totalScore += 0;
-                                            break;
-                                    }
+                                    Console.WriteLine($"[{j + 1}] {question.Answers[j]}");
+                                }
+
+                                //Läser in användarens svar
+                                answerChoice = Console.ReadLine();
+
+                                //If-sats som kontrollerar om svaret är giltigt
+                                if (int.TryParse(answerChoice, out answerIndex) && answerIndex > 0 && answerIndex <= question.Answers.Length)
+                                {
+                                    break;
                                 }
                                 else
                                 {
-                                    Console.WriteLine("Wrong answer!");
+                                    Console.WriteLine("Error: Invalid choice");
+                                    Console.WriteLine("Press a key to continue");
+                                    Console.ReadKey();
+                                }
+                            }
+
+                            //If-sats som kontrollerar om svaret är korrekt
+                            if (question.CorrectAnswerIndex == answerIndex - 1)
+                            {
+                                Console.WriteLine("Correct answer!");
+                                //Lägg till poäng till totalScore
+                                switch (difficultyChoice)
+                                {
+                                    case "1":
+                                        totalScore += 1;
+                                        break;
+                                    case "2":
+                                        totalScore += 2;
+                                        break;
+                                    case "3":
+                                        totalScore += 3;
+                                        break;
+                                    default:
+                                        totalScore += 0;
+                                        break;
                                 }
                             }
                             else
                             {
-                                Console.WriteLine("Error: Invalid choice");
+                                Console.WriteLine("Wrong answer!");
                             }
+
                             Console.WriteLine("Press a key to continue to the next question");
                             Console.ReadKey();
                         }
