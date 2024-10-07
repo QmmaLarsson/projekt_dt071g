@@ -121,8 +121,9 @@ namespace quiz
                             int randomIndex = random.Next(filteredQuestions.Count);
                             var question = filteredQuestions[randomIndex];
 
+                            bool endQuiz = false;
                             string? answerChoice;
-                            int answerIndex;
+                            int answerIndex = -1;
 
                             //While-loop som körs till det att användaren anger ett giltigt svar
                             while (true)
@@ -136,8 +137,19 @@ namespace quiz
                                     Console.WriteLine($"[{j + 1}] {question.Answers[j]}");
                                 }
 
+                                Console.WriteLine("\n[X] End quiz");
+
                                 //Läser in användarens svar
                                 answerChoice = Console.ReadLine();
+
+                                //If-sats som kontrollerar om användaren vill avsluta quizet
+                                if (answerChoice.Trim().ToUpper() == "X")
+                                {
+                                    //Sätt endQuiz till true för att indikera att användaren villa avsluta quizet
+                                    endQuiz = true;
+                                    //Bryt loopen
+                                    break;
+                                }
 
                                 //If-sats som kontrollerar om svaret är giltigt
                                 if (int.TryParse(answerChoice, out answerIndex) && answerIndex > 0 && answerIndex <= question.Answers.Length)
@@ -151,6 +163,12 @@ namespace quiz
                                     Console.WriteLine("Press a key to continue");
                                     Console.ReadKey();
                                 }
+                            }
+
+                            //If-sats som avbryter den yttre loopen om användaren valt detta
+                            if (endQuiz)
+                            {
+                                break;
                             }
 
                             //If-sats som kontrollerar om svaret är korrekt
@@ -188,9 +206,9 @@ namespace quiz
 
                         highscorehandler.AddPlayerScore(playerName, totalScore);
 
-                        Console.WriteLine("Press a key to return to the startpage");
+                        Console.WriteLine("Press a key to return to the homepage");
                         Console.ReadKey();
-                        break;
+                        continue;
 
                     case "2":
                         Console.Clear();
@@ -214,19 +232,28 @@ namespace quiz
 
                         Console.WriteLine();
                         Console.WriteLine("[D] Delete highscore-list");
+                        Console.WriteLine("[X] Return to the homepage");
 
-                        string? deleteChoice = Console.ReadLine();
-                        if(deleteChoice?.Trim().ToUpper() == "D")
+                        //Läser in användarens svar
+                        string? actionChoice = Console.ReadLine();
+
+                        //If-sats som raderar highscore-listan
+                        if (actionChoice?.Trim().ToUpper() == "D")
                         {
                             highscorehandler.DeleteAllScores();
                             Console.WriteLine("Highscore-list has been deleted");
+                        }
+                        else if (actionChoice?.Trim().ToUpper() == "X")
+                        {
+                            //Gå tillbaka till startsidan
+                            continue;
                         }
 
                         break;
 
                     case "3":
                         Console.Clear();
-                        Console.WriteLine("INFORMATON ABOUT THE GAME\n");
+                        Console.WriteLine("INFORMATION ABOUT THE GAME\n");
                         Console.WriteLine("This is a quiz game where you can test your knowledge of movies. You will face 10 questions that will put your movie knowledge to the ultimate challenge.\n");
                         Console.WriteLine("HOW TO PLAY");
                         Console.WriteLine("Start with choosing your difficulty, you can select from three levels of difficulty. You will earn points based on the difficulty level of the questions you answer correctly.");
@@ -247,7 +274,7 @@ namespace quiz
                 }
                 //Vänta med att rensa konsollen
                 Console.WriteLine("");
-                Console.WriteLine("Press a key to continue");
+                Console.WriteLine("Press a key to return to the homepage");
                 Console.ReadKey();
             }
         }

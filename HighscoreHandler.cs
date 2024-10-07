@@ -35,6 +35,7 @@ namespace Quiz
             SaveScores();
         }
 
+        //Raderar hela highscore-listan
         public void DeleteAllScores()
         {
             highscore.Clear();
