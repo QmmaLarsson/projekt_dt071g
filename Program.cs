@@ -68,30 +68,42 @@ namespace quiz
                             }
                         }
 
-                        Console.Clear();
-                        Console.WriteLine("Choose level of difficulty:\n");
-                        Console.WriteLine("[1] Easy");
-                        Console.WriteLine("[2] Medium");
-                        Console.WriteLine("[3] Hard");
-
-                        //Läser in anändarens val
-                        string? difficultyChoice = Console.ReadLine();
                         string? difficulty;
-                        //Switch-sats som bestämmer svårighetsgraden utifrån användarens val
-                        switch (difficultyChoice)
+                        string? difficultyChoice;
+
+                        //While-loop som kontrollerar att val av svårighetsgrad är korrekt
+                        while (true)
                         {
-                            case "1":
-                                difficulty = "Easy";
-                                break;
-                            case "2":
-                                difficulty = "Medium";
-                                break;
-                            case "3":
-                                difficulty = "Hard";
-                                break;
-                            default:
-                                difficulty = "Error: Invalid choice";
-                                break;
+                            Console.Clear();
+                            Console.WriteLine("Choose level of difficulty:\n");
+                            Console.WriteLine("[1] Easy");
+                            Console.WriteLine("[2] Medium");
+                            Console.WriteLine("[3] Hard");
+
+                            //Läser in anändarens val
+                            difficultyChoice = Console.ReadLine();
+
+                            //Switch-sats som bestämmer svårighetsgraden utifrån användarens val
+                            switch (difficultyChoice)
+                            {
+                                case "1":
+                                    difficulty = "Easy";
+                                    break;
+                                case "2":
+                                    difficulty = "Medium";
+                                    break;
+                                case "3":
+                                    difficulty = "Hard";
+                                    break;
+                                default:
+                                    Console.WriteLine("Error: Invalid choice");
+                                    Console.WriteLine("Press a key to continue");
+                                    Console.ReadKey();
+                                    //Gå tillbaka till början av loopen om valet är ogiltigt
+                                    continue;
+                            }
+                            //Bryt loopen om valet är giltigt
+                            break;
                         }
 
                         //Filtrerar frågor baserat på svårighetsgrad
