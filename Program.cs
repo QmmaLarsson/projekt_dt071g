@@ -14,7 +14,15 @@ namespace quiz
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("E M M A S  Q U I Z\n");
+                Console.WriteLine(
+@"····························································
+:   __  __  _____     _____ _____    ___  _   _ ___ _____  :
+:  |  \/  |/ _ \ \   / /_ _| ____|  / _ \| | | |_ _|__  /  :
+:  | |\/| | | | \ \ / / | ||  _|   | | | | | | || |  / /   :
+:  | |  | | |_| |\ V /  | || |___  | |_| | |_| || | / /_   :
+:  |_|  |_|\___/  \_/  |___|_____|  \__\_\\___/|___/____|  :
+····························································");
+                Console.WriteLine();
                 Console.WriteLine("[1] Start game");
                 Console.WriteLine("[2] Highscore");
                 Console.WriteLine("[3] Information about the game\n");
@@ -34,11 +42,31 @@ namespace quiz
                 {
                     case "1":
                         Console.Clear();
-                        Console.WriteLine("Enter your name: ");
-                        //Läser in användarens val
-                        string? input2 = Console.ReadLine();
-                        //Trimma anvndarens input, om input är null sätts värdet till en tom sträng
-                        string playerName = input2?.Trim() ?? string.Empty;
+                        string playerName;
+
+                        //While-loop som körs tills användaren skriver in ett giltigt användarnamn
+                        while (true)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("Enter your name: ");
+                            //Läser in användarens val
+                            string? input2 = Console.ReadLine();
+                            //Trimma anvndarens input, om input är null sätts värdet till en tom sträng
+                            playerName = input2?.Trim() ?? string.Empty;
+
+                            if (!string.IsNullOrEmpty(playerName))
+                            {
+                                //Gå ur loopen om namnet är giltigt
+                                break;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Error: Name cannot be empty");
+                                Console.WriteLine("Press a key to continue");
+                                Console.ReadKey();
+
+                            }
+                        }
 
                         Console.Clear();
                         Console.WriteLine("Choose level of difficulty:\n");

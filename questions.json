@@ -1,14 +1,14 @@
 [
     {
         "Text": "What is the name of the wizarding school in Harry Potter?",
-        "Answers": ["Hogwarts", "Beauxbatons", "Durmstrang", "Ilvermorny"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Durmstrang", "Beauxbatons", "Hogwarts", "Ilvermorny"],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "In which movie do toys come to life?",
-        "Answers": ["Toy Story", "Finding Nemo", "Shrek", "Monsters, Inc."],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Shrek", "Finding Nemo", "Toy Story", "Monsters, Inc."],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
@@ -19,26 +19,26 @@
     },
     {
         "Text": "Who is the main character in 'The Lion King'?",
-        "Answers": ["Simba", "Mufasa", "Scar", "Nala"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Mufasa", "Simba", "Scar", "Nala"],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "What color is the bird in 'Rio'?",
-        "Answers": ["Blue", "Green", "Red", "Yellow"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Yellow", "Green", "Red", "Blue"],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Easy"
     },
     {
         "Text": "Who is the fairy in Peter Pan?",
-        "Answers": ["Tinkerbell", "Cinderella", "Belle", "Snow White"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Cinderella", "Tinkerbell", "Belle", "Snow White"],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the fish in 'Finding Nemo'?",
-        "Answers": ["Nemo", "Dory", "Marlin", "Bruce"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Dory", "Nemo", "Marlin", "Bruce"],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
@@ -49,14 +49,14 @@
     },
     {
         "Text": "What is the name of the bear in 'The Jungle Book'?",
-        "Answers": ["Baloo", "Bagheera", "Shere Khan", "Kaa"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Shere Khan", "Bagheera", "Baloo", "Kaa"],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "What kind of animal is Dumbo?",
-        "Answers": ["Elephant", "Lion", "Mouse", "Bear"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Bear", "Lion", "Mouse", "Elephant"],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Easy"
     },
     {
@@ -67,8 +67,8 @@
     },
     {
         "Text": "What is the name of the talking snowman in 'Frozen'?",
-        "Answers": ["Olaf", "Sven", "Kristoff", "Hans"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Kristoff", "Sven", "Olaf", "Hans"],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
@@ -79,8 +79,8 @@
     },
     {
         "Text": "What is the name of the fairy tale character who leaves a shoe behind?",
-        "Answers": ["Cinderella", "Snow White", "Sleeping Beauty", "Rapunzel"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Rapunzel", "Snow White", "Sleeping Beauty", "Cinderella"],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Easy"
     },
     {
@@ -91,14 +91,14 @@
     },
     {
         "Text": "In which movie does a girl travel to Oz?",
-        "Answers": ["The Wizard of Oz", "Alice in Wonderland", "Peter Pan", "Narnia"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Narnia", "Alice in Wonderland", "Peter Pan", "The Wizard of Oz"],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Easy"
     },
     {
         "Text": "What type of animal is Shrek's friend Donkey?",
-        "Answers": ["Donkey", "Horse", "Dragon", "Ogre"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Dragon", "Horse", "Donkey", "Ogre"],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
@@ -109,14 +109,14 @@
     },
     {
         "Text": "What is the name of the bear in 'Winnie the Pooh'?",
-        "Answers": ["Winnie", "Eeyore", "Piglet", "Tigger"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Tiger", "Eeyore", "Piglet", "Winnie"],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Easy"
     },
     {
         "Text": "Who is the main villain in 'The Little Mermaid'?",
-        "Answers": ["Ursula", "Maleficent", "Scar", "Jafar"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Scar", "Maleficent", "Ursula", "Jafar"],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
@@ -145,14 +145,14 @@
     },
     {
         "Text": "What is the name of the princess in 'Beauty and the Beast'?",
-        "Answers": ["Belle", "Ariel", "Cinderella", "Snow White"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Snow White", "Ariel", "Cinderella", "Belle"],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Easy"
     },
     {
         "Text": "What type of animal is 'Kung Fu Panda'?",
-        "Answers": ["Panda", "Tiger", "Monkey", "Snake"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Monkey", "Tiger", "Panda", "Snake"],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
@@ -163,8 +163,8 @@
     },
     {
         "Text": "What is the name of the ship in 'Titanic'?",
-        "Answers": ["Titanic", "Lusitania", "Olympic", "Britannic"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Olympic", "Lusitania", "Titanic", "Britannic"],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
@@ -175,14 +175,14 @@
     },
     {
         "Text": "What is the name of the cat in 'Alice in Wonderland'?",
-        "Answers": ["Cheshire Cat", "Garfield", "Tom", "Sylvester"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Tom", "Garfield", "Cheshire Cat", "Sylvester"],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "In which movie does a character named Nemo appear?",
-        "Answers": ["Finding Nemo", "Finding Dory", "Toy Story", "The Incredibles"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["The Incredibles", "Finding Dory", "Toy Story", "Finding Nemo"],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Easy"
     },
     {
@@ -199,25 +199,25 @@
     },
     {
         "Text": "What is the name of the toy cowboy in 'Toy Story'?",
-        "Answers": ["Woody", "Buzz", "Rex", "Mr. Potato Head"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Rex", "Buzz", "Woody", "Mr. Potato Head"],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the elf in 'The Lord of the Rings'?",
-        "Answers": ["Legolas", "Gimli", "Frodo", "Aragorn"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Gimli", "Legolas", "Frodo", "Aragorn"],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "What do you call a bear that does martial arts?",
-        "Answers": ["Kung Fu Panda", "Grizzly Bear", "Kung Fu Panda", "Panda"],
+        "Answers": ["Kung Fu Panda", "Grizzly Bear", "Panda King", "Panda"],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "In 'Frozen', who is Elsa's sister?",
-        "Answers": ["Anna", "Olaf", "Kristoff", "Sven"],
+        "Answers": ["Anna", "Amy", "Annie", "Alice"],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
@@ -235,32 +235,32 @@
     },
     {
         "Text": "What is the name of the pirate in 'Pirates of the Caribbean'?",
-        "Answers": ["Jack Sparrow", "Davy Jones", "Hector Barbossa", "Will Turner"],
+        "Answers": ["Jack Sparrow", "Jon Jones", "Captain Hook", "Ursula"],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "In which movie does a young girl find a magical wardrobe?",
-        "Answers": ["The Chronicles of Narnia", "Harry Potter", "Alice in Wonderland", "The Wizard of Oz"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Harry Potter", "The Chronicles of Narnia", "Alice in Wonderland", "The Wizard of Oz"],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the dog in 'The Little Mermaid'?",
-        "Answers": ["Max", "Toto", "Pluto", "Buddy"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Toto", "Max", "Pluto", "Buddy"],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "Who is the villain in 'Aladdin'?",
-        "Answers": ["Jafar", "Scar", "Hades", "Gaston"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Hades", "Scar", "Jafar", "Gaston"],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the main character in 'Finding Dory'?",
-        "Answers": ["Dory", "Nemo", "Marlin", "Bruce"],
-        "CorrectAnswerIndex": 0,
+        "Answers": ["Nemo", "Dory", "Marlin", "Bruce"],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
