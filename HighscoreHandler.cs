@@ -35,6 +35,12 @@ namespace Quiz
             SaveScores();
         }
 
+        public void DeleteAllScores()
+        {
+            highscore.Clear();
+            SaveScores();
+        }
+
         //Hämtar de bästa poängen, sorterade i fallande ordning
         public List<PlayerScore> GetTopScores(int count)
         {

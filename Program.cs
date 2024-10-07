@@ -142,6 +142,7 @@ namespace quiz
                                 //If-sats som kontrollerar om svaret är giltigt
                                 if (int.TryParse(answerChoice, out answerIndex) && answerIndex > 0 && answerIndex <= question.Answers.Length)
                                 {
+                                    //Loopen bryts om svaret är giltigt
                                     break;
                                 }
                                 else
@@ -193,7 +194,7 @@ namespace quiz
 
                     case "2":
                         Console.Clear();
-                        Console.WriteLine("HIGHSCORE");
+                        Console.WriteLine("HIGHSCORE\n");
                         //Hämta de fem bästa poängen
                         var topScores = highscorehandler.GetTopScores(5);
 
@@ -210,6 +211,17 @@ namespace quiz
                                 Console.WriteLine($"{k + 1}. {topScores[k].PlayerName}: {topScores[k].Score} points");
                             }
                         }
+
+                        Console.WriteLine();
+                        Console.WriteLine("[D] Delete highscore-list");
+
+                        string? deleteChoice = Console.ReadLine();
+                        if(deleteChoice?.Trim().ToUpper() == "D")
+                        {
+                            highscorehandler.DeleteAllScores();
+                            Console.WriteLine("Highscore-list has been deleted");
+                        }
+
                         break;
 
                     case "3":
@@ -221,7 +233,7 @@ namespace quiz
                         Console.WriteLine("  - Easy (1 point per question)");
                         Console.WriteLine("  - Medium (2 points per question)");
                         Console.WriteLine("  - Hard (3 points per question)\n");
-                        Console.WriteLine("At the end of the quiz, your total score will be displayed, and you will have the opportunity to save your score in the highscore-list.\n");
+                        Console.WriteLine("At the end of the quiz, your total score will be displayed, and if you perform well, you might earn a spot on the highscore-list.\n");
                         Console.WriteLine("Are you ready to prove your film knowledge? Good luck!");
                         break;
 
