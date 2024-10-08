@@ -1,631 +1,1156 @@
 [
     {
         "Text": "What is the name of the wizarding school in Harry Potter?",
-        "Answers": ["Durmstrang", "Beauxbatons", "Hogwarts", "Ilvermorny"],
+        "Answers": [
+            "Durmstrang",
+            "Beauxbatons",
+            "Hogwarts",
+            "Ilvermorny"
+        ],
         "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "In which movie do toys come to life?",
-        "Answers": ["Shrek", "Finding Nemo", "Toy Story", "Monsters, Inc."],
+        "Answers": [
+            "Shrek",
+            "Finding Nemo",
+            "Toy Story",
+            "Monsters, Inc."
+        ],
         "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the green ogre in Shrek?",
-        "Answers": ["Fiona", "Donkey", "Shrek", "Gingy"],
+        "Answers": [
+            "Fiona",
+            "Donkey",
+            "Shrek",
+            "Gingy"
+        ],
         "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "Who is the main character in 'The Lion King'?",
-        "Answers": ["Mufasa", "Simba", "Scar", "Nala"],
+        "Answers": [
+            "Mufasa",
+            "Simba",
+            "Scar",
+            "Nala"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "What color is the bird in 'Rio'?",
-        "Answers": ["Yellow", "Green", "Red", "Blue"],
+        "Answers": [
+            "Yellow",
+            "Green",
+            "Red",
+            "Blue"
+        ],
         "CorrectAnswerIndex": 3,
         "Difficulty": "Easy"
     },
     {
         "Text": "Who is the fairy in Peter Pan?",
-        "Answers": ["Cinderella", "Tinkerbell", "Belle", "Snow White"],
+        "Answers": [
+            "Cinderella",
+            "Tinkerbell",
+            "Belle",
+            "Snow White"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the fish in 'Finding Nemo'?",
-        "Answers": ["Dory", "Nemo", "Marlin", "Bruce"],
+        "Answers": [
+            "Dory",
+            "Nemo",
+            "Marlin",
+            "Bruce"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "In which movie does a princess sleep for 100 years?",
-        "Answers": ["Sleeping Beauty", "Cinderella", "Snow White", "The Little Mermaid"],
+        "Answers": [
+            "Sleeping Beauty",
+            "Cinderella",
+            "Snow White",
+            "The Little Mermaid"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the bear in 'The Jungle Book'?",
-        "Answers": ["Shere Khan", "Bagheera", "Baloo", "Kaa"],
+        "Answers": [
+            "Shere Khan",
+            "Bagheera",
+            "Baloo",
+            "Kaa"
+        ],
         "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "What kind of animal is Dumbo?",
-        "Answers": ["Bear", "Lion", "Mouse", "Elephant"],
+        "Answers": [
+            "Bear",
+            "Lion",
+            "Mouse",
+            "Elephant"
+        ],
         "CorrectAnswerIndex": 3,
         "Difficulty": "Easy"
     },
     {
         "Text": "Who is the villain in '101 Dalmatians'?",
-        "Answers": ["Cruella de Vil", "Maleficent", "Ursula", "Scar"],
+        "Answers": [
+            "Cruella de Vil",
+            "Maleficent",
+            "Ursula",
+            "Scar"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the talking snowman in 'Frozen'?",
-        "Answers": ["Kristoff", "Sven", "Olaf", "Hans"],
+        "Answers": [
+            "Kristoff",
+            "Sven",
+            "Olaf",
+            "Hans"
+        ],
         "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the princess in 'Aladdin'?",
-        "Answers": ["Jasmine", "Ariel", "Belle", "Mulan"],
+        "Answers": [
+            "Jasmine",
+            "Ariel",
+            "Belle",
+            "Mulan"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the fairy tale character who leaves a shoe behind?",
-        "Answers": ["Rapunzel", "Snow White", "Sleeping Beauty", "Cinderella"],
+        "Answers": [
+            "Rapunzel",
+            "Snow White",
+            "Sleeping Beauty",
+            "Cinderella"
+        ],
         "CorrectAnswerIndex": 3,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the main character's name in 'The Incredibles'?",
-        "Answers": ["Bob", "Mr. Incredible", "Dash", "Frozone"],
+        "Answers": [
+            "Bob",
+            "Mr. Incredible",
+            "Dash",
+            "Frozone"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "In which movie does a girl travel to Oz?",
-        "Answers": ["Narnia", "Alice in Wonderland", "Peter Pan", "The Wizard of Oz"],
+        "Answers": [
+            "Narnia",
+            "Alice in Wonderland",
+            "Peter Pan",
+            "The Wizard of Oz"
+        ],
         "CorrectAnswerIndex": 3,
         "Difficulty": "Easy"
     },
     {
         "Text": "What type of animal is Shrek's friend Donkey?",
-        "Answers": ["Dragon", "Horse", "Donkey", "Ogre"],
+        "Answers": [
+            "Dragon",
+            "Horse",
+            "Donkey",
+            "Ogre"
+        ],
         "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "Who is the protagonist in 'Moana'?",
-        "Answers": ["Moana", "Maui", "Tala", "Tamatoa"],
+        "Answers": [
+            "Moana",
+            "Maui",
+            "Tala",
+            "Tamatoa"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the bear in 'Winnie the Pooh'?",
-        "Answers": ["Tiger", "Eeyore", "Piglet", "Winnie"],
+        "Answers": [
+            "Tiger",
+            "Eeyore",
+            "Piglet",
+            "Winnie"
+        ],
         "CorrectAnswerIndex": 3,
         "Difficulty": "Easy"
     },
     {
         "Text": "Who is the main villain in 'The Little Mermaid'?",
-        "Answers": ["Scar", "Maleficent", "Ursula", "Jafar"],
+        "Answers": [
+            "Scar",
+            "Maleficent",
+            "Ursula",
+            "Jafar"
+        ],
         "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the penguin in 'Happy Feet'?",
-        "Answers": ["Mumble", "Gloria", "Lovelace", "Erik"],
+        "Answers": [
+            "Mumble",
+            "Gloria",
+            "Lovelace",
+            "Erik"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "What do the characters in 'Toy Story' do when humans are around?",
-        "Answers": ["Play dead", "Act normal", "Dance", "Sing"],
+        "Answers": [
+            "Play dead",
+            "Act normal",
+            "Dance",
+            "Sing"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "Who is the superhero in 'Spider-Man'?",
-        "Answers": ["Peter Parker", "Bruce Wayne", "Clark Kent", "Tony Stark"],
+        "Answers": [
+            "Peter Parker",
+            "Bruce Wayne",
+            "Clark Kent",
+            "Tony Stark"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "In which movie does a boy build a treehouse?",
-        "Answers": ["Home Alone", "The Goonies", "The Sandlot", "The Parent Trap"],
+        "Answers": [
+            "Home Alone",
+            "The Goonies",
+            "The Sandlot",
+            "The Parent Trap"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the princess in 'Beauty and the Beast'?",
-        "Answers": ["Snow White", "Ariel", "Cinderella", "Belle"],
+        "Answers": [
+            "Snow White",
+            "Ariel",
+            "Cinderella",
+            "Belle"
+        ],
         "CorrectAnswerIndex": 3,
         "Difficulty": "Easy"
     },
     {
         "Text": "What type of animal is 'Kung Fu Panda'?",
-        "Answers": ["Monkey", "Tiger", "Panda", "Snake"],
+        "Answers": [
+            "Monkey",
+            "Tiger",
+            "Panda",
+            "Snake"
+        ],
         "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "In which movie do we see a character named Jack Sparrow?",
-        "Answers": ["Pirates of the Caribbean", "Indiana Jones", "Transformers", "The Matrix"],
+        "Answers": [
+            "Pirates of the Caribbean",
+            "Indiana Jones",
+            "Transformers",
+            "The Matrix"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the ship in 'Titanic'?",
-        "Answers": ["Olympic", "Lusitania", "Titanic", "Britannic"],
+        "Answers": [
+            "Olympic",
+            "Lusitania",
+            "Titanic",
+            "Britannic"
+        ],
         "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "Who is the main character in 'Frozen'?",
-        "Answers": ["Elsa", "Anna", "Olaf", "Kristoff"],
+        "Answers": [
+            "Elsa",
+            "Anna",
+            "Olaf",
+            "Kristoff"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the cat in 'Alice in Wonderland'?",
-        "Answers": ["Tom", "Garfield", "Cheshire Cat", "Sylvester"],
+        "Answers": [
+            "Tom",
+            "Garfield",
+            "Cheshire Cat",
+            "Sylvester"
+        ],
         "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "In which movie does a character named Nemo appear?",
-        "Answers": ["The Incredibles", "Finding Dory", "Toy Story", "Finding Nemo"],
+        "Answers": [
+            "The Incredibles",
+            "Finding Dory",
+            "Toy Story",
+            "Finding Nemo"
+        ],
         "CorrectAnswerIndex": 3,
         "Difficulty": "Easy"
     },
     {
         "Text": "What color is the car in 'Cars'?",
-        "Answers": ["Red", "Blue", "Green", "Yellow"],
+        "Answers": [
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "Who is the main character in 'Harry Potter'?",
-        "Answers": ["Harry Potter", "Ron Weasley", "Hermione Granger", "Neville Longbottom"],
+        "Answers": [
+            "Harry Potter",
+            "Ron Weasley",
+            "Hermione Granger",
+            "Neville Longbottom"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the toy cowboy in 'Toy Story'?",
-        "Answers": ["Rex", "Buzz", "Woody", "Mr. Potato Head"],
+        "Answers": [
+            "Rex",
+            "Buzz",
+            "Woody",
+            "Mr. Potato Head"
+        ],
         "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the elf in 'The Lord of the Rings'?",
-        "Answers": ["Gimli", "Legolas", "Frodo", "Aragorn"],
+        "Answers": [
+            "Gimli",
+            "Legolas",
+            "Frodo",
+            "Aragorn"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "What do you call a bear that does martial arts?",
-        "Answers": ["Kung Fu Panda", "Grizzly Bear", "Panda King", "Panda"],
+        "Answers": [
+            "Kung Fu Panda",
+            "Grizzly Bear",
+            "Panda King",
+            "Panda"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "In 'Frozen', who is Elsa's sister?",
-        "Answers": ["Anna", "Amy", "Annie", "Alice"],
+        "Answers": [
+            "Anna",
+            "Amy",
+            "Annie",
+            "Alice"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the superhero in 'The Incredibles'?",
-        "Answers": ["Mr. Incredible", "Dash", "Elastigirl", "Frozone"],
+        "Answers": [
+            "Mr. Incredible",
+            "Dash",
+            "Elastigirl",
+            "Frozone"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "In which movie does a princess run away to join a band of robbers?",
-        "Answers": ["Robin Hood", "Tangled", "Frozen", "Mulan"],
+        "Answers": [
+            "Robin Hood",
+            "Tangled",
+            "Frozen",
+            "Mulan"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the pirate in 'Pirates of the Caribbean'?",
-        "Answers": ["Jack Sparrow", "Jon Jones", "Captain Hook", "Ursula"],
+        "Answers": [
+            "Jack Sparrow",
+            "Jon Jones",
+            "Captain Hook",
+            "Ursula"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "In which movie does a young girl find a magical wardrobe?",
-        "Answers": ["Harry Potter", "The Chronicles of Narnia", "Alice in Wonderland", "The Wizard of Oz"],
+        "Answers": [
+            "Harry Potter",
+            "The Chronicles of Narnia",
+            "Alice in Wonderland",
+            "The Wizard of Oz"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the dog in 'The Little Mermaid'?",
-        "Answers": ["Toto", "Max", "Pluto", "Buddy"],
+        "Answers": [
+            "Toto",
+            "Max",
+            "Pluto",
+            "Buddy"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "Who is the villain in 'Aladdin'?",
-        "Answers": ["Hades", "Scar", "Jafar", "Gaston"],
+        "Answers": [
+            "Hades",
+            "Scar",
+            "Jafar",
+            "Gaston"
+        ],
         "CorrectAnswerIndex": 2,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the name of the main character in 'Finding Dory'?",
-        "Answers": ["Nemo", "Dory", "Marlin", "Bruce"],
+        "Answers": [
+            "Nemo",
+            "Dory",
+            "Marlin",
+            "Bruce"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Easy"
     },
     {
         "Text": "What kind of animal is in 'Zootopia'?",
-        "Answers": ["All animals", "Only mammals", "Only predators", "Only prey"],
+        "Answers": [
+            "All animals",
+            "Only mammals",
+            "Only predators",
+            "Only prey"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Easy"
     },
     {
         "Text": "What is the highest-grossing film of all time?",
-        "Answers": ["Avatar", "Titanic", "Star Wars: The Force Awakens", "Avengers: Endgame"],
+        "Answers": [
+            "Avatar",
+            "Titanic",
+            "Star Wars: The Force Awakens",
+            "Avengers: Endgame"
+        ],
         "CorrectAnswerIndex": 3,
         "Difficulty": "Medium"
     },
     {
         "Text": "Who directed 'Inception'?",
-        "Answers": ["Christopher Nolan", "Steven Spielberg", "Martin Scorsese", "James Cameron"],
+        "Answers": [
+            "Christopher Nolan",
+            "Steven Spielberg",
+            "Martin Scorsese",
+            "James Cameron"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Medium"
     },
     {
         "Text": "Which movie features a character named Forrest Gump?",
-        "Answers": ["Forrest Gump", "The Shawshank Redemption", "Pulp Fiction", "Fight Club"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Pulp Fiction",
+            "The Shawshank Redemption",
+            "Forrest Gump",
+            "Fight Club"
+        ],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Medium"
     },
     {
         "Text": "What is the main theme of 'The Matrix'?",
-        "Answers": ["Reality vs. illusion", "Love", "Revenge", "Friendship"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Love",
+            "Reality vs. illusion",
+            "Revenge",
+            "Friendship"
+        ],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Medium"
     },
     {
         "Text": "What is the name of the kingdom in 'Frozen'?",
-        "Answers": ["Arendelle", "Narnia", "Wakanda", "Hogwarts"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Hogwarts",
+            "Narnia",
+            "Wakanda",
+            "Arendelle"
+        ],
+        "CorrectAnswerIndex": 4,
         "Difficulty": "Medium"
     },
     {
         "Text": "Who played the Joker in 'The Dark Knight'?",
-        "Answers": ["Heath Ledger", "Jared Leto", "Jack Nicholson", "Joaquin Phoenix"],
+        "Answers": [
+            "Heath Ledger",
+            "Jared Leto",
+            "Jack Nicholson",
+            "Joaquin Phoenix"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Medium"
     },
     {
         "Text": "In 'The Lion King', who is Simba's father?",
-        "Answers": ["Mufasa", "Scar", "Kovu", "Zazu"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Kovu",
+            "Scar",
+            "Mufasa",
+            "Zazu"
+        ],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Medium"
     },
     {
         "Text": "What is the name of the fictional African country in 'Black Panther'?",
-        "Answers": ["Wakanda", "Zamunda", "Narnia", "Genosha"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Narnia",
+            "Zamunda",
+            "Wakanda",
+            "Genosha"
+        ],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Medium"
     },
     {
         "Text": "Who directed 'Pulp Fiction'?",
-        "Answers": ["Quentin Tarantino", "Martin Scorsese", "Francis Ford Coppola", "Ridley Scott"],
+        "Answers": [
+            "Quentin Tarantino",
+            "Martin Scorsese",
+            "Francis Ford Coppola",
+            "Ridley Scott"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Medium"
     },
     {
         "Text": "What is the main character's name in 'Harry Potter'?",
-        "Answers": ["Harry Potter", "Ron Weasley", "Hermione Granger", "Neville Longbottom"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Hermione Granger",
+            "Ron Weasley",
+            "Harry Potter",
+            "Neville Longbottom"
+        ],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Medium"
     },
     {
         "Text": "What type of creature is Gollum in 'The Lord of the Rings'?",
-        "Answers": ["Hobbit", "Elf", "Man", "Orc"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Elf",
+            "Hobbit",
+            "Man",
+            "Orc"
+        ],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Medium"
     },
     {
         "Text": "In 'The Godfather', what is the name of the main character?",
-        "Answers": ["Michael Corleone", "Don Vito Corleone", "Sonny Corleone", "Tom Hagen"],
+        "Answers": [
+            "Michael Corleone",
+            "Don Vito Corleone",
+            "Sonny Corleone",
+            "Tom Hagen"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Medium"
     },
     {
         "Text": "Who played Katniss Everdeen in 'The Hunger Games'?",
-        "Answers": ["Jennifer Lawrence", "Kristen Stewart", "Emma Watson", "Shailene Woodley"],
+        "Answers": [
+            "Jennifer Lawrence",
+            "Kristen Stewart",
+            "Emma Watson",
+            "Shailene Woodley"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Medium"
     },
     {
         "Text": "In 'Jurassic Park', what type of dinosaur is the T-Rex?",
-        "Answers": ["Theropod", "Sauropod", "Ornithischian", "Pterosaur"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Pterosaur",
+            "Sauropod",
+            "Ornithischian",
+            "Theropod"
+        ],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Medium"
     },
     {
         "Text": "Who is the creator of 'The Simpsons'?",
-        "Answers": ["Matt Groening", "Seth MacFarlane", "Trey Parker", "Matt Stone"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Matt Stone",
+            "Seth MacFarlane",
+            "Trey Parker",
+            "Matt Groening"
+        ],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Medium"
     },
     {
         "Text": "What is the name of the spaceship in 'Star Wars'?",
-        "Answers": ["Millennium Falcon", "Star Destroyer", "Enterprise", "Galactica"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Star Destroyer",
+            "Millennium Falcon",
+            "Enterprise",
+            "Galactica"
+        ],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Medium"
     },
     {
         "Text": "In 'The Matrix', what color pill does Neo take?",
-        "Answers": ["Red", "Blue", "Green", "Yellow"],
+        "Answers": [
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Medium"
     },
     {
         "Text": "Who is the main antagonist in 'Avengers: Endgame'?",
-        "Answers": ["Thanos", "Loki", "Ultron", "Hela"],
+        "Answers": [
+            "Thanos",
+            "Loki",
+            "Ultron",
+            "Hela"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Medium"
     },
     {
         "Text": "What is the name of the school in 'Harry Potter'?",
-        "Answers": ["Hogwarts", "Beauxbatons", "Durmstrang", "Ilvermorny"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Durmstrang",
+            "Beauxbatons",
+            "Hogwarts",
+            "Ilvermorny"
+        ],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Medium"
     },
     {
         "Text": "In 'Titanic', who plays Jack Dawson?",
-        "Answers": ["Leonardo DiCaprio", "Brad Pitt", "Johnny Depp", "Tom Cruise"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Tom Cruise",
+            "Brad Pitt",
+            "Johnny Depp",
+            "Leonardo DiCaprio"
+        ],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Medium"
     },
     {
         "Text": "What is the name of the fictional city in 'Batman'?",
-        "Answers": ["Gotham City", "Metropolis", "Central City", "Star City"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Metropolis",
+            "Gotham City",
+            "Central City",
+            "Star City"
+        ],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Medium"
     },
     {
-        "Text": "In 'Frozen', who is Elsa's sister?",
-        "Answers": ["Anna", "Olaf", "Kristoff", "Sven"],
+        "Text": "In 'Finding Nemo', what kind of fish is Nemo?",
+        "Answers": [
+            "Clownfish",
+            "Blue Tang",
+            "Angelfish",
+            "Lionfish"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Medium"
     },
     {
         "Text": "Who is the director of 'Avatar'?",
-        "Answers": ["James Cameron", "Christopher Nolan", "Steven Spielberg", "Ridley Scott"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Steven Spielberg",
+            "Christopher Nolan",
+            "James Cameron",
+            "Ridley Scott"
+        ],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Medium"
     },
     {
         "Text": "In 'Finding Nemo', what is the name of Nemo's father?",
-        "Answers": ["Marlin", "Bruce", "Dory", "Gus"],
+        "Answers": [
+            "Marlin",
+            "Bruce",
+            "Dory",
+            "Gus"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Medium"
     },
     {
         "Text": "What is the name of the main character in 'The Shawshank Redemption'?",
-        "Answers": ["Andy Dufresne", "Red Redding", "Warden Norton", "Ellis Redding"],
+        "Answers": [
+            "Andy Dufresne",
+            "Red Redding",
+            "Warden Norton",
+            "Ellis Redding"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Medium"
     },
     {
-        "Text": "What is the name of the wizard in 'Harry Potter'?",
-        "Answers": ["Dumbledore", "Voldemort", "Snape", "Hagrid"],
-        "CorrectAnswerIndex": 0,
+        "Text": "What is the name of Harry Potter's owl?",
+        "Answers": [
+            "Dumbledore",
+            "Dudley",
+            "Hedwig",
+            "Hagrid"
+        ],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Medium"
     },
     {
         "Text": "What is the name of the main character in 'The Great Gatsby'?",
-        "Answers": ["Jay Gatsby", "Nick Carraway", "Daisy Buchanan", "Tom Buchanan"],
+        "Answers": [
+            "Jay Gatsby",
+            "Nick Carraway",
+            "Daisy Buchanan",
+            "Tom Buchanan"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Medium"
     },
     {
         "Text": "In 'The Silence of the Lambs', who is the main antagonist?",
-        "Answers": ["Hannibal Lecter", "Buffalo Bill", "Jack Crawford", "Clarice Starling"],
+        "Answers": [
+            "Hannibal Lecter",
+            "Buffalo Bill",
+            "Jack Crawford",
+            "Clarice Starling"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Medium"
     },
     {
         "Text": "Who is the main character in 'The Godfather'?",
-        "Answers": ["Michael Corleone", "Don Vito Corleone", "Sonny Corleone", "Tom Hagen"],
+        "Answers": [
+            "Michael Corleone",
+            "Don Vito Corleone",
+            "Sonny Corleone",
+            "Tom Hagen"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Medium"
     },
     {
-        "Text": "What is the name of the ship in 'Pirates of the Caribbean'?",
-        "Answers": ["Black Pearl", "Flying Dutchman", "Queen Anne's Revenge", "HMS Interceptor"],
-        "CorrectAnswerIndex": 0,
+        "Text": "What is the name of Jack Sparrow's ship in 'Pirates of the Caribbean'?",
+        "Answers": [
+            "Flying Dutchman",
+            "Black Pearl",
+            "Queen Anne's Revenge",
+            "HMS Interceptor"
+        ],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Medium"
     },
     {
         "Text": "Who directed 'The Social Network'?",
-        "Answers": ["David Fincher", "Aaron Sorkin", "Chris Columbus", "J.J. Abrams"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "J.J. Abrams",
+            "Aaron Sorkin",
+            "Chris Columbus",
+            "David Fincher"
+        ],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Medium"
     },
     {
         "Text": "In 'Star Wars', what color is Luke Skywalker's lightsaber?",
-        "Answers": ["Green", "Blue", "Red", "Purple"],
+        "Answers": [
+            "Green",
+            "Blue",
+            "Red",
+            "Purple"
+        ],
         "CorrectAnswerIndex": 1,
         "Difficulty": "Medium"
     },
     {
         "Text": "What is the name of the hotel in 'The Shining'?",
-        "Answers": ["Overlook Hotel", "The Bates Motel", "The Continental", "The Grand Budapest Hotel"],
+        "Answers": [
+            "Overlook Hotel",
+            "The Bates Motel",
+            "The Continental",
+            "The Grand Budapest Hotel"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Hard"
     },
     {
         "Text": "Who directed the film 'Memento'?",
-        "Answers": ["Christopher Nolan", "David Fincher", "Martin Scorsese", "Quentin Tarantino"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "David Fincher",
+            "Christopher Nolan",
+            "Martin Scorsese",
+            "Quentin Tarantino"
+        ],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Hard"
     },
     {
         "Text": "In 'Inception', what is the name of the device used for shared dreaming?",
-        "Answers": ["The PASIV Device", "The Inception Machine", "The Dream Machine", "The Lucid Dreamer"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "The Lucid Dreamer",
+            "The Inception Machine",
+            "The Dream Machine",
+            "The PASIV Device"
+        ],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Hard"
     },
     {
         "Text": "What is the twist at the end of 'Fight Club'?",
-        "Answers": ["The narrator is Tyler Durden", "It's all a dream", "The main character dies", "It's a love story"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "The main character dies",
+            "It's all a dream",
+            "The narrator is Tyler Durden",
+            "It's a love story"
+        ],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Hard"
     },
     {
         "Text": "In 'The Sixth Sense', what does the main character see?",
-        "Answers": ["Dead people", "Future events", "Aliens", "Ghosts"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Aliens",
+            "Future events",
+            "Dead people",
+            "Ghosts"
+        ],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Hard"
     },
     {
         "Text": "Who composed the score for 'The Godfather'?",
-        "Answers": ["Nino Rota", "Ennio Morricone", "Hans Zimmer", "John Williams"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Hans Zimmer",
+            "Ennio Morricone",
+            "Nino Rota",
+            "John Williams"
+        ],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Hard"
     },
     {
         "Text": "In 'The Prestige', what is the secret to the illusion 'The Transported Man'?",
-        "Answers": ["Twin brother", "Magic", "Teleportation", "Hologram"],
+        "Answers": [
+            "Twin brother",
+            "Magic",
+            "Teleportation",
+            "Hologram"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Hard"
     },
     {
         "Text": "What is the name of the villain in 'No Country for Old Men'?",
-        "Answers": ["Anton Chigurh", "Javier Bardem", "Tommy Lee Jones", "Josh Brolin"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Javier Bardem",
+            "Anton Chigurh",
+            "Tommy Lee Jones",
+            "Josh Brolin"
+        ],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Hard"
     },
     {
         "Text": "Who directed 'The Shape of Water'?",
-        "Answers": ["Guillermo del Toro", "James Cameron", "Steven Spielberg", "Alfonso Cuarón"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Steven Spielberg",
+            "James Cameron",
+            "Guillermo del Toro",
+            "Alfonso Cuarón"
+        ],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Hard"
     },
     {
         "Text": "What is the main theme of 'Eternal Sunshine of the Spotless Mind'?",
-        "Answers": ["Love and memory", "Science fiction", "Friendship", "Time travel"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Time travel",
+            "Science fiction",
+            "Friendship",
+            "Love and memory"
+        ],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Hard"
     },
     {
         "Text": "In 'Psycho', what is the name of the motel?",
-        "Answers": ["Bates Motel", "Motel 6", "The Continental", "The Overlook"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "The Overlook",
+            "Motel 6",
+            "The Continental",
+            "Bates Motel"
+        ],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Hard"
     },
     {
         "Text": "Who starred as the Joker in 'The Dark Knight'?",
-        "Answers": ["Heath Ledger", "Jack Nicholson", "Joaquin Phoenix", "Cesar Romero"],
+        "Answers": [
+            "Heath Ledger",
+            "Jack Nicholson",
+            "Joaquin Phoenix",
+            "Cesar Romero"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Hard"
     },
     {
         "Text": "What is the significance of the red wheelbarrow in 'The Shawshank Redemption'?",
-        "Answers": ["Symbol of hope", "Tool for escape", "Art piece", "Memorial"],
+        "Answers": [
+            "Symbol of hope",
+            "Tool for escape",
+            "Art piece",
+            "Memorial"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Hard"
     },
     {
         "Text": "In 'Blade Runner', what is the term used for synthetic humans?",
-        "Answers": ["Replicants", "Cyborgs", "Clones", "Androids"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Clones",
+            "Cyborgs",
+            "Replicants",
+            "Androids"
+        ],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Hard"
     },
     {
         "Text": "Who wrote the novel that 'The Great Gatsby' is based on?",
-        "Answers": ["F. Scott Fitzgerald", "Ernest Hemingway", "Mark Twain", "J.D. Salinger"],
+        "Answers": [
+            "F. Scott Fitzgerald",
+            "Ernest Hemingway",
+            "Mark Twain",
+            "J.D. Salinger"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Hard"
     },
     {
         "Text": "In 'The Godfather', who says, 'I'm gonna make him an offer he can't refuse'?",
-        "Answers": ["Don Vito Corleone", "Michael Corleone", "Sonny Corleone", "Tom Hagen"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Michael Corleone",
+            "Don Vito Corleone",
+            "Sonny Corleone",
+            "Tom Hagen"
+        ],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Hard"
     },
     {
         "Text": "What is the name of the protagonist in 'American Psycho'?",
-        "Answers": ["Patrick Bateman", "Tyler Durden", "Gordon Gekko", "Jordan Belfort"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Tyler Durden",
+            "Patrick Bateman",
+            "Gordon Gekko",
+            "Jordan Belfort"
+        ],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Hard"
     },
     {
         "Text": "In 'Goodfellas', who narrates the story?",
-        "Answers": ["Henry Hill", "Jimmy Conway", "Tommy DeVito", "Paul Cicero"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Paul Cicero",
+            "Jimmy Conway",
+            "Tommy DeVito",
+            "Henry Hill"
+        ],
+        "CorrectAnswerIndex": 3,
         "Difficulty": "Hard"
     },
     {
         "Text": "What is the significance of the ending of 'Inception'?",
-        "Answers": ["Ambiguous reality", "Dream state", "Reunion", "Sacrifice"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Reunion",
+            "Dream state",
+            "Ambiguous reality",
+            "Sacrifice"
+        ],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Hard"
     },
     {
         "Text": "Who directed '2001: A Space Odyssey'?",
-        "Answers": ["Stanley Kubrick", "Ridley Scott", "James Cameron", "Steven Spielberg"],
+        "Answers": [
+            "Stanley Kubrick",
+            "Ridley Scott",
+            "James Cameron",
+            "Steven Spielberg"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Hard"
     },
     {
         "Text": "What is the name of the main character in 'The Silence of the Lambs'?",
-        "Answers": ["Clarice Starling", "Hannibal Lecter", "Jack Crawford", "Buffalo Bill"],
+        "Answers": [
+            "Clarice Starling",
+            "Hannibal Lecter",
+            "Jack Crawford",
+            "Buffalo Bill"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Hard"
     },
     {
         "Text": "In 'Her', what is the name of the AI operating system?",
-        "Answers": ["Samantha", "JARVIS", "HAL 9000", "Cortana"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "JARVIS",
+            "Samantha",
+            "HAL 9000",
+            "Cortana"
+        ],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Hard"
     },
     {
         "Text": "What is the main theme of 'Requiem for a Dream'?",
-        "Answers": ["Addiction", "Love", "Friendship", "Family"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "Love",
+            "Addiction",
+            "Friendship",
+            "Family"
+        ],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Hard"
     },
     {
         "Text": "What is the significance of the ending of 'The Usual Suspects'?",
-        "Answers": ["The reveal of Keyser Söze", "A cliffhanger", "A twist ending", "A reunion"],
+        "Answers": [
+            "The reveal of Keyser Söze",
+            "A cliffhanger",
+            "A twist ending",
+            "A reunion"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Hard"
     },
     {
         "Text": "In 'Lost in Translation', where does the main character find herself?",
-        "Answers": ["Tokyo", "Paris", "New York", "Los Angeles"],
-        "CorrectAnswerIndex": 0,
+        "Answers": [
+            "New York",
+            "Paris",
+            "Tokyo",
+            "Los Angeles"
+        ],
+        "CorrectAnswerIndex": 2,
         "Difficulty": "Hard"
     },
     {
-        "Text": "Who directed 'The Shape of Water'?",
-        "Answers": ["Guillermo del Toro", "James Cameron", "Steven Spielberg", "Alfonso Cuarón"],
-        "CorrectAnswerIndex": 0,
+        "Text": "In 'The Godfather', who is the first character to be killed?",
+        "Answers": [
+            "Sollozzo",
+            "McCluskey",
+            "Fredo",
+            "Barzini"
+        ],
+        "CorrectAnswerIndex": 1,
         "Difficulty": "Hard"
     },
     {
         "Text": "In 'Pan's Labyrinth', who does the protagonist meet?",
-        "Answers": ["A faun", "A ghost", "A demon", "A princess"],
+        "Answers": [
+            "A faun",
+            "A ghost",
+            "A demon",
+            "A princess"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Hard"
     },
     {
         "Text": "What is the main theme of 'The Road'?",
-        "Answers": ["Survival", "Friendship", "Love", "Family"],
+        "Answers": [
+            "Survival",
+            "Friendship",
+            "Love",
+            "Family"
+        ],
         "CorrectAnswerIndex": 0,
         "Difficulty": "Hard"
     }
