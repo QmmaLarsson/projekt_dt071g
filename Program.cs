@@ -10,10 +10,13 @@ namespace quiz
             QuizHandler quizhandler = new QuizHandler();
             HighscoreHandler highscorehandler = new HighscoreHandler();
 
+            //Variabler
+            bool returnToHome = false;  //Boolean som används för att bryta den yttre loopen
+
             //While-loop som gör att programmet fortsätter köras till användaren väljer att avsluta programmet
             while (true)
             {
-                Console.Clear();
+                Console.Clear(); //Konsollen rensas innan resultatet visas
                 Console.WriteLine(
 @"····························································
 :   __  __  _____     _____ _____    ___  _   _ ___ _____  :
@@ -28,31 +31,29 @@ namespace quiz
                 Console.WriteLine("[3] Information about the game\n");
                 Console.WriteLine("[X] Close application");
 
-                //Läser in användarens val
-                string? input = Console.ReadLine();
+                //Variabler
+                string? input = Console.ReadLine(); //Läser in användarens val
                 //Trim() tar bort eventuella mellanslag runt användarens inmatning
                 //ToUpper() Säkerställer att både "X" och "x" är giltiga val
                 //Om input är null sätts värdet till en tom sträng
                 string choice = input?.Trim().ToUpper() ?? string.Empty;
 
-                //Konsollen rensas innan resultatet visas
-                //Console.Clear();
                 //Switch-sats som hanterar användarens val
                 switch (choice)
                 {
                     case "1":
-                        Console.Clear();
+                        Console.Clear(); //Konsollen rensas innan resultatet visas
                         string playerName;
 
                         //While-loop som körs tills användaren skriver in ett giltigt användarnamn
                         while (true)
                         {
-                            Console.Clear();
+                            Console.Clear(); //Konsollen rensas innan resultatet visas
                             Console.WriteLine("Enter your name: ");
-                            //Läser in användarens val
-                            string? input2 = Console.ReadLine();
-                            //Trimma anvndarens input, om input är null sätts värdet till en tom sträng
-                            playerName = input2?.Trim() ?? string.Empty;
+                            
+                            //Variabler
+                            string? input2 = Console.ReadLine(); //Läser in användarens val
+                            playerName = input2?.Trim() ?? string.Empty; //Trimma anvndarens input, om input är null sätts värdet till en tom sträng
 
                             if (!string.IsNullOrEmpty(playerName))
                             {
@@ -68,20 +69,21 @@ namespace quiz
                             }
                         }
 
+                        //Variabler
                         string? difficulty;
                         string? difficultyChoice;
 
                         //While-loop som kontrollerar att val av svårighetsgrad är korrekt
                         while (true)
                         {
-                            Console.Clear();
+                            Console.Clear(); //Konsollen rensas innan resultatet visas
                             Console.WriteLine("Choose level of difficulty:\n");
                             Console.WriteLine("[1] Easy");
                             Console.WriteLine("[2] Medium");
                             Console.WriteLine("[3] Hard");
 
-                            //Läser in anändarens val
-                            difficultyChoice = Console.ReadLine();
+                            //Variabler
+                            difficultyChoice = Console.ReadLine(); //Läser in anändarens val
 
                             //Switch-sats som bestämmer svårighetsgraden utifrån användarens val
                             switch (difficultyChoice)
@@ -112,8 +114,8 @@ namespace quiz
                         //Ställ 10 frågor
                         Random random = new Random();
 
-                        //Variabel för att hålla reda på poängen
-                        int totalScore = 0;
+                        //Variabler
+                        int totalScore = 0; //Håller reda på poängen
 
                         //Foreach-loop som loopar igenom de filtrerade frågorna
                         for (int i = 0; i < 10 && filteredQuestions.Count > 0; i++)
@@ -121,14 +123,15 @@ namespace quiz
                             int randomIndex = random.Next(filteredQuestions.Count);
                             var question = filteredQuestions[randomIndex];
 
-                            bool endQuiz = false;
+                            //Variabler
                             string? answerChoice;
                             int answerIndex = -1;
+                            bool endQuiz = false; //Boolean som används för att bryta den yttre loopen
 
                             //While-loop som körs till det att användaren anger ett giltigt svar
                             while (true)
                             {
-                                Console.Clear();
+                                Console.Clear(); //Konsollen rensas innan resultatet visas
                                 Console.WriteLine(question.Text);
                                 Console.WriteLine();
                                 //For-loop som skriver ut svarsalternativen för frågorna
@@ -200,62 +203,73 @@ namespace quiz
                             Console.WriteLine("Press a key to continue to the next question");
                             Console.ReadKey();
                         }
-                        Console.Clear();
+                        Console.Clear(); //Konsollen rensas innan resultatet visas
                         Console.WriteLine("Quiz finished!");
-                        Console.WriteLine($"Your total score was {totalScore} points!");
+                        Console.WriteLine($"Your total score was {totalScore} points!\n");
 
                         highscorehandler.AddPlayerScore(playerName, totalScore);
 
-                        Console.WriteLine("Press a key to return to the homepage");
+                        Console.WriteLine("Press a key to return to continue");
                         Console.ReadKey();
                         continue;
 
                     case "2":
-                        Console.Clear();
-                        Console.WriteLine("HIGHSCORE\n");
-                        //Hämta de fem bästa poängen
-                        var topScores = highscorehandler.GetTopScores(5);
+                        while (true)
+                        {
+                            Console.Clear(); //Konsollen rensas innan resultatet visas
+                            Console.WriteLine("HIGHSCORE\n");
 
-                        //If-sats som kontrollerar om det finns några sparade poäng
-                        if (topScores.Count == 0)
-                        {
-                            Console.WriteLine("No scores available yet");
-                        }
-                        else
-                        {
-                            //For-loop som skriver ut de fem bästa poängen
-                            for (int k = 0; k < topScores.Count; k++)
+                            //Variabler
+                            var topScores = highscorehandler.GetTopScores(5); //Hämta de fem bästa poängen
+
+                            //If-sats som kontrollerar om det finns några sparade poäng
+                            if (topScores.Count == 0)
                             {
-                                Console.WriteLine($"{k + 1}. {topScores[k].PlayerName}: {topScores[k].Score} points");
+                                Console.WriteLine("No scores available yet");
+                            }
+                            else
+                            {
+                                //For-loop som skriver ut de fem bästa poängen
+                                for (int k = 0; k < topScores.Count; k++)
+                                {
+                                    Console.WriteLine($"{k + 1}. {topScores[k].PlayerName}: {topScores[k].Score} points");
+                                }
+                            }
+
+                            Console.WriteLine();
+
+                            Console.WriteLine("[D] Delete highscore-list");
+                            Console.WriteLine("[X] Return to the homepage");
+
+                            //Variabler
+                            string? actionChoice = Console.ReadLine(); //Läser in användarens svar
+
+                            //If-sats som raderar highscore-listan
+                            if (actionChoice?.Trim().ToUpper() == "D")
+                            {
+                                highscorehandler.DeleteAllScores();
+                                Console.WriteLine("Highscore-list has been deleted");
+                            }
+                            else if (actionChoice?.Trim().ToUpper() == "X")
+                            {
+                                returnToHome = true;
+                                //Loopen bryts om användaren väljer alternativ "X"
+                                break;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Error: Invalid choice");
+                                Console.WriteLine("Press a key to continue");
+                                Console.ReadKey();
+                                continue;
                             }
                         }
-
-                        Console.WriteLine();
-                        Console.WriteLine("[D] Delete highscore-list");
-                        Console.WriteLine("[X] Return to the homepage");
-
-                        //Läser in användarens svar
-                        string? actionChoice = Console.ReadLine();
-
-                        //If-sats som raderar highscore-listan
-                        if (actionChoice?.Trim().ToUpper() == "D")
-                        {
-                            highscorehandler.DeleteAllScores();
-                            Console.WriteLine("Highscore-list has been deleted");
-                        }
-                        else if (actionChoice?.Trim().ToUpper() == "X")
-                        {
-                            //Gå tillbaka till startsidan
-                            continue;
-                        }
-
                         break;
 
                     case "3":
-                        Console.Clear();
+                        Console.Clear(); //Konsollen rensas innan resultatet visas
                         Console.WriteLine("INFORMATION ABOUT THE GAME\n");
                         Console.WriteLine("This is a quiz game where you can test your knowledge of movies. You will face 10 questions that will put your movie knowledge to the ultimate challenge.\n");
-                        Console.WriteLine("HOW TO PLAY");
                         Console.WriteLine("Start with choosing your difficulty, you can select from three levels of difficulty. You will earn points based on the difficulty level of the questions you answer correctly.");
                         Console.WriteLine("  - Easy (1 point per question)");
                         Console.WriteLine("  - Medium (2 points per question)");
@@ -272,9 +286,17 @@ namespace quiz
                         break;
 
                 }
+
+                //If-sats som avbryter den yttre loopen om användaren valt detta
+                if (returnToHome)
+                {
+                    returnToHome = false;
+                    continue;
+                }
+
                 //Vänta med att rensa konsollen
                 Console.WriteLine("");
-                Console.WriteLine("Press a key to return to the homepage");
+                Console.WriteLine("Press a key to continue");
                 Console.ReadKey();
             }
         }
