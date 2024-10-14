@@ -1,7 +1,6 @@
 using System.Text.Json;
-using quiz;
 
-namespace Quiz
+namespace quiz
 {
     public class QuizHandler
     {

@@ -1,12 +1,10 @@
-﻿using Quiz;
-
-namespace quiz
+﻿namespace quiz
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //Instans av klassen QuizHandler
+            //Instans av klasser
             QuizHandler quizhandler = new QuizHandler();
             HighscoreHandler highscorehandler = new HighscoreHandler();
 
@@ -16,20 +14,8 @@ namespace quiz
             //While-loop som gör att programmet fortsätter köras till användaren väljer att avsluta programmet
             while (true)
             {
-                Console.Clear(); //Konsollen rensas innan resultatet visas
-                Console.WriteLine(
-@"····························································
-:   __  __  _____     _____ _____    ___  _   _ ___ _____  :
-:  |  \/  |/ _ \ \   / /_ _| ____|  / _ \| | | |_ _|__  /  :
-:  | |\/| | | | \ \ / / | ||  _|   | | | | | | || |  / /   :
-:  | |  | | |_| |\ V /  | || |___  | |_| | |_| || | / /_   :
-:  |_|  |_|\___/  \_/  |___|_____|  \__\_\\___/|___/____|  :
-····························································");
-                Console.WriteLine();
-                Console.WriteLine("[1] Start game");
-                Console.WriteLine("[2] Highscore");
-                Console.WriteLine("[3] Information about the game\n");
-                Console.WriteLine("[X] Close application");
+                //Läser in texten på startsidan
+                TextHandler.IntroText();
 
                 //Variabler
                 string? input = Console.ReadLine(); //Läser in användarens val
@@ -50,7 +36,7 @@ namespace quiz
                         {
                             Console.Clear(); //Konsollen rensas innan resultatet visas
                             Console.WriteLine("Enter your name: ");
-                            
+
                             //Variabler
                             string? input2 = Console.ReadLine(); //Läser in användarens val
                             playerName = input2?.Trim() ?? string.Empty; //Trimma anvndarens input, om input är null sätts värdet till en tom sträng
@@ -267,15 +253,8 @@ namespace quiz
                         break;
 
                     case "3":
-                        Console.Clear(); //Konsollen rensas innan resultatet visas
-                        Console.WriteLine("INFORMATION ABOUT THE GAME\n");
-                        Console.WriteLine("This is a quiz game where you can test your knowledge of movies. You will face 10 questions that will put your movie knowledge to the ultimate challenge.\n");
-                        Console.WriteLine("Start with choosing your difficulty, you can select from three levels of difficulty. You will earn points based on the difficulty level of the questions you answer correctly.");
-                        Console.WriteLine("  - Easy (1 point per question)");
-                        Console.WriteLine("  - Medium (2 points per question)");
-                        Console.WriteLine("  - Hard (3 points per question)\n");
-                        Console.WriteLine("At the end of the quiz, your total score will be displayed, and if you perform well, you might earn a spot on the highscore-list.\n");
-                        Console.WriteLine("Are you ready to prove your film knowledge? Good luck!");
+                    //Läser in informationstext
+                        TextHandler.InfoText();
                         break;
 
                     case "X":
