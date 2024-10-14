@@ -28,6 +28,7 @@ namespace quiz
 
         public PlayerScore? RunQuiz()
         {
+            //Variabler
             string playerName = string.Empty;
 
             //While-loop som körs tills användaren skriver in ett giltigt användarnamn

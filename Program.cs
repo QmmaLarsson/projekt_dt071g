@@ -29,7 +29,7 @@
                 {
                     case "1":
                         Console.Clear(); //Konsollen rensas innan resultatet 
-                        PlayerScore? result = quizhandler.RunQuiz();
+                        PlayerScore? result = quizhandler.RunQuiz(); //Kör quizet och spara resultatet i variabeln result
 
                         Console.Clear(); //Konsollen rensas innan resultatet visas
                         Console.WriteLine("Quiz finished!");
