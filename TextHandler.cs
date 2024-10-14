@@ -22,6 +22,7 @@ namespace quiz
 
         public static void InfoText()
         {
+            Console.Clear(); //Konsollen rensas innan resultatet visas
             Console.WriteLine("INFORMATION ABOUT THE GAME\n");
             Console.WriteLine("This is a quiz game where you can test your knowledge of movies. You will face 10 questions that will put your movie knowledge to the ultimate challenge.\n");
             Console.WriteLine("Start with choosing your difficulty, you can select from three levels of difficulty. You will earn points based on the difficulty level of the questions you answer correctly.");
